@@ -1,0 +1,238 @@
+
+html {
+    background-color: rgb(94, 194, 228);
+}
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 87%;
+}
+h1 {
+    color:rgb(0, 32, 91);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(33, 33, 163)
+}
+p {
+    color: rgb(107, 161, 179);
+}
+.container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../projectImages/Stripes.png) left top repeat-x, #FFF url(../projectImages/Stripes.png) left bottom repeat-x;
+    background-size: 40px 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 480px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+}
+@media screen and (min-width: 1300px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+}
+.box1 {
+    background-image: url(../projectImages/Emirates\ A380\ taking\ off.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.content-area {
+    border-top: 3px solid lightblue;
+    border-bottom: 3px solid lightblue;
+}
+@media screen and (max-width: 480px) {
+    .content-area {
+        padding-top: 20px;
+    }
+}
+.main-area {
+    width: 50%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+.support {
+    width: 50%;
+    float: left;
+    background-color: rgb(192, 223, 235);
+    background-image: linear-gradient(to bottom, rgb(192, 223, 235), #FFF);
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    padding-bottom: 40px;
+    font-size: 85%;
+}
+.fix {
+    clear: both;
+}
+@media screen and (max-width: 700px) {
+    .main-area,
+    .support {
+        width: auto;
+        float: none;
+    }
+    
+    .main-area {
+        padding-right: 0;
+    }
+}
+.site-nav {
+    margin-top: 20px;
+}
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+.site-nav a {
+    text-decoration: none;
+    color: rgb(107, 161, 179);
+    padding: 10px 20px;
+    border: 3px solid lightblue;
+    border-bottom: none;
+    display: block;
+}
+.site-nav a:hover {
+    background-color: lightblue;
+}
+.site-nav ol {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+@media screen and (max-width: 700px) {
+    .site-nav ol {
+        width: 50%;
+        margin-right: 0;
+    }
+    .site-nav a {
+        padding: 20px 0;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        border: 3px solid lightblue;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .site-nav ol {
+        width: 80%;
+        margin-right: 0;
+    }
+    .site-nav a {
+        padding: 20px 0;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        border: 3px solid lightblue;
+    }
+    
+}
+.image-banner {
+    position: relative;
+}
+.image-banner img {
+    display: block;
+}
+.cycle-slideshow {
+    margin-bottom: 30px;
+    width: 100%;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+}
+.slide {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+.slide-text {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(98, 77, 77, 0.4);
+    color: black;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.slide-text p {
+    color: white;
+}
+.slide-text h3 {
+    margin: 0;
+}
+.banner-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+    padding: 1px 25px;
+}
+.banner-description p {
+    color: white;
+}
+header {
+    padding-top: 20px;
+    color: lightblue;
+}
+header h1 {
+    margin: 0;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 165%;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-shadow: 2px 10px 1px #999999;
+}
+header p {
+    font-size: 100%;
+    margin-top: 10px;
+    text-align: justify;
+}
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 85%;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.cycle-prev, .cycle-next {
+    position: absolute;
+    width: 20%;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    padding: 1px 10px;
+    display: block;
+    cursor: pointer;
+    font-size: 130%;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.cycle-next {
+    right: 0;
+}
+
+.cycle-slideshow:hover .cycle-prev,
+.cycle-slideshow:hover .cycle-next {
+    opacity: 1;
+}
